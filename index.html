@@ -51,9 +51,20 @@
               value="One For All! - New Registration"
             />
             <input type="hidden" name="_next" value="https://msha.ke/grayseeh" />
+
+            <input type="hidden" name="_captcha" value="false">
       
             <button id="btn" type="submit">Register</button>
           </form>
     </div>
+    <script>
+      let btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        alert(
+          "Thank you for booking a course, You will receive a reply via email shortly!"
+        );
+      });
+    </script>
   </body>
 </html>
